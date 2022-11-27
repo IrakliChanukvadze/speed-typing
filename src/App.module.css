@@ -1,0 +1,88 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      rgba(27, 28, 34, 0.05),
+      rgba(39, 48, 34, 0.05)
+    ),
+    url(assets/1.webp);
+
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  gap: 30px;
+  color: white;
+  font-weight: 800;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.textArea {
+  width: 60%;
+  height: 250px;
+  opacity: 0.8;
+  font-family: "Press Start 2P", cursive;
+}
+.textArea:disabled {
+  cursor: not-allowed;
+}
+
+.textArea:focus {
+  opacity: 1;
+}
+
+.remaining {
+  font-size: 1.3rem;
+}
+
+.button {
+  font-family: "Press Start 2P", cursive;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 50px;
+  text-transform: uppercase;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.count {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .textArea {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .remaining {
+    font-size: 1.1rem;
+  }
+  .count {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .title {
+    font-size: 1.2rem;
+  }
+  .remaining {
+    font-size: 0.9rem;
+  }
+  .count {
+    font-size: 1rem;
+  }
+}
